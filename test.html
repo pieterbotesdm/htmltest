@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #1c1c1c, #4b0082);
+            color: #ffffff;
+        }
+        .container {
+            text-align: center;
+            background: linear-gradient(135deg, #3c1053, #ad5389);
+            padding: 20px;
+            border: 2px solid #5b0e2d;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png');
+            opacity: 1; 
+            z-index: 0;
+        }
+        .emoji {
+            font-size: 50px;
+            position: relative;
+            z-index: 1;
+        }
+        h1, p {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="emoji">😔🌸</p>
+        <h1>Ek is jammer ek het gewen in Monopoly</h1>
+        <p>Maar miss met jou gesels.</p>
+        <p>Waar is jy?</p>
+        <p class="emoji">🌸😊</p>
+    </div>
+</body>
+</html>
